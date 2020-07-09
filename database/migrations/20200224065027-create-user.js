@@ -14,8 +14,17 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
-      bio: {
-        type: Sequelize.TEXT
+      password: {
+        type: Sequelize.STRING
+      },
+      resetToken: {
+        type: Sequelize.STRING
+      },
+      resetTokenExpiry: {
+        type: Sequelize.STRING
+      },
+      permissions: {
+        type: Sequelize.ENUM
       },
       createdAt: {
         allowNull: false,
